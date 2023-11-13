@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <section id="home">
+        <div class="home-wrp">
+            <nav>
+                <h2>Landing Page</h2>
+                <div class="link-wrp">
+                    <a href=#home" class="links">Home</a>
+                    <a href="#about" class="links">About</a>
+                    <a href="#services" class="links">Services</a>
+                    <a href="#contact" class="links">Contact us</a>
+                </div>
+                <div class="menu-btn">
+                    <span>☰</span>
+                    <span>✖</span>
+                </div>
+            </nav>
+                <h3 >Uplift your career with us</h3>
+                <h6 >Check out our Services</h6>
+                <a href="#services" alt="" class="serices-btn" >Services</a>
+        </div>
+    </section>
+
+    <section id="about" data-aos="zoom-in">
+        <div class="header-wrp">
+            <h2>About Us</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-wrp">
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente atque sit laborum deleniti voluptatibus nemo nam dolores, et necessitatibus ut. Enim dolorum sequi rerum facere, sunt eum veritatis laboriosam et sapiente libero officiis ut praesentium maxime ad dolor nisi animi quidem veniam quae necessitatibus nulla iusto aspernatur blanditiis nihil.</p>
+                <button>Read more</button>
+            </div>
+             <img src="images/images (6).jpg" alt="about">
+        </div>
+    </section>
+
+    <section id="services" data-aos="fade-up">
+        <div class="content-header-wrp">
+            <h2>Our Services</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="card-wrp">
+            <div class="card" data-aos="fade-up">
+                <img src="images/images (2).jpeg" alt="web development">
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere voluptate est assumenda iste perspiciatis eligendi repellendus doloribus amet rerum!</p>
+                <button class="read-btn">Read more</button>
+            </div>
+    
+            <div class="card" data-aos="fade-up">
+                <img src="images/images (3).jpeg" alt="Android development">
+                <h3>Android development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere voluptate est assumenda iste perspiciatis eligendi repellendus doloribus amet rerum!</p>
+                <button class="read-btn">Read more</button>
+            </div>
+    
+            <div class="card" data-aos="fade-up">
+                <img src="images/images (5).jpg" alt="UI/UX Design">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere voluptate est assumenda iste perspiciatis eligendi repellendus doloribus amet rerum!</p>
+                    <button class="read-btn">Read more</button>
+            </div>
+    
+            <div class="card" data-aos="fade-up">
+                <img src="images/images (1).jpeg" alt="Python Programming">
+                <h3>Python Programming</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere voluptate est assumenda iste perspiciatis eligendi repellendus doloribus amet rerum!</p>
+                <button class="read-btn">Read more</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" data-aos="fade-up">
+        <div class="contact-wrp">
+            <div class="header-wrp">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <form>
+                <label>Name: </label>
+                <input type='text' placeholder="your name" required>
+                <label>Last Name: </label>
+                <input type='text' placeholder="your last name" required>
+                <label>Email: </label>
+                <input type='email' placeholder="your email address" required>
+                <label>Message: </label>
+                <textarea type="text" rows="7" placeholder='write message...' required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>© CopyRight. All Rights Reserved.</footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250, duration: 1000, once: true
+      });
+
+      const menuBtn = document.querySelector(".menu-btn");
+      const linkWrp = document.querySelector(".link-wrp");
+
+      menuBtn.addEventListener('click', ()=>{
+          menuBtn.classList.toggle('active');
+          linkWrp.classList.toggle('active');
+      })
+
+      document.querySelectorAll(".links").forEach(n =>
+      n.addEventListener('click', ()=>{
+          menuBtn.classList.remove('active');
+          linkWrp.classList.remove('active');
+      }))
+
+    </script>
+    
+</body>
+</html>
