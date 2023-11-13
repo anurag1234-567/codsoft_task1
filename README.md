@@ -1,2 +1,2 @@
 # codsoft_task1
-I have created landing page using html, css and javascript.
+Landing page created using HTML, CSS and JavaScript.
